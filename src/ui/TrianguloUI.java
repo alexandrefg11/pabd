@@ -3,11 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ui;
-
 /**
  *
  * @author 20221074010036
+ *
  */
+
+
+
+
 public class TrianguloUI extends javax.swing.JFrame {
 
     /**
@@ -62,11 +66,7 @@ public class TrianguloUI extends javax.swing.JFrame {
         aTF.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         aTF.setForeground(new java.awt.Color(51, 51, 51));
         aTF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        aTF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aTFActionPerformed(evt);
-            }
-        });
+        aTF.setText(" ");
 
         bTF.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         bTF.setForeground(new java.awt.Color(51, 51, 51));
@@ -190,19 +190,24 @@ public class TrianguloUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void aTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aTFActionPerformed
+ 
+    
+    
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         double a = Double.parseDouble (aTF.getText());
         double b = Double.parseDouble (bTF.getText());
         double c = Double.parseDouble (cTF.getText());
         
+        
+            
+            
+             
+        
+        
         tipolabel.setText("calcule o tipo! "+a+" + "+b+" +"+c);
         arealabel.setText("calcule a área!");
-    }//GEN-LAST:event_aTFActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
@@ -212,6 +217,11 @@ public class TrianguloUI extends javax.swing.JFrame {
         cTF.setText("");
         tipolabel.setText("tipo De Triãngulo = ?");
         arealabel.setText ("area = ?");
+
+
+
+
+
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
@@ -245,7 +255,7 @@ public class TrianguloUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TrianguloUI().setVisible(true);
-            }
+}
         });
     }
 
@@ -264,4 +274,3 @@ public class TrianguloUI extends javax.swing.JFrame {
     private javax.swing.JPanel painel;
     private javax.swing.JLabel tipolabel;
     // End of variables declaration//GEN-END:variables
-}

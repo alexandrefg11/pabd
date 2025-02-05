@@ -4,7 +4,7 @@
  */
 package pabd.java;
 
-import com.sun.jdi.connect.spi.Connection;
+import java.sql.*;
 
 /**
  *
